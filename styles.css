@@ -204,15 +204,15 @@ a{
     }
 }
 
-@media (max-height: 750px){
+@media (max-height: 799px),(max-width: 1200px){
     .icon {
         top: -15%; /* Ajusta la posición del icono */
         width: 20%;
         height: auto;
     }
     .circle{
-        width: 190px; /* Ajusta el tamaño del círculo */
-        height: 170px; 
+        width: 150px; /* Ajusta el tamaño del círculo */
+        height: 150px; 
     }
 
     .titulo {
@@ -237,8 +237,8 @@ a{
     }
 
     .boton {
-        width: 140px; /* Ajusta el tamaño del botón */
-        height: 60px; /* Ajusta el tamaño del botón */
+        width: 120px; /* Ajusta el tamaño del botón */
+        height: 50px; /* Ajusta el tamaño del botón */
     }
 
     .pdf {
