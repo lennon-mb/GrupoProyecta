@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Jua&display=swap');
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+    position: relative;
+}
+
+.left {
+    background-color: #EA5425; /* Fondo naranja */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    position: relative;
+}
+
+.content {
+    color: white;
+    width: 80%; /* Ajusta según sea necesario */
+    text-align: left;
+    position: relative;
+}
+
+.icon {
+    width: 200px; /* Ajusta el tamaño del icono */
+    position: absolute;
+    bottom: 110%; /* Ajusta la posición del icono */
+    left: 55%;
+    transform: translateX(-50%);
+}
+
+.titulo {
+    font-size: 45px; /* Ajusta el tamaño del título */
+    font-weight: 100;
+    margin-bottom: 20px;
+    position: absolute;
+    margin-top: -10%;
+    margin-left: 20%;
+    font-family: 'Lilita One', sans-serif;
+    line-height: 1.9;
+    letter-spacing: 1.5px;
+    
+}
+
+.p1, .p2 {
+    font-size: 30px; /* Ajusta el tamaño del texto */
+    margin-bottom: 20px;
+    position: relative;
+    line-height: 1.9;
+    letter-spacing: 1.5px;
+    font-family: 'Lilita One', sans-serif;
+}
+
+
+
+.social-icons {
+    margin-top: 20px; /* Ajusta según sea necesario */
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    left: 25%;
+    gap: 50px;
+    
+   
+}
+
+
+.social-icons img {
+    width: 70px; /* Ajusta el tamaño de los iconos de redes sociales */
+    margin: 0 10px; /* Espaciado entre los iconos */
+    margin-top: 80px;
+    filter: invert(1);
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover{
+    fill: invert(0);
+    transform: scale(1.2);
+}
+
+.right {
+    background-color: #FFFFFF; /* Color blanco */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    align-items: center; /* Centra el contenido verticalmente */
+    position: relative;
+}
+
+.circle {
+    width: 200px; /* Ajusta el tamaño del círculo */
+    height: 190px; /* Ajusta el tamaño del círculo */
+    background-color: #ffffff; /* Color del círculo */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: calc(100% - 0px); /* Ajusta la posición del círculo */
+    transform: translate(-50%, -50%);
+    top: 50%;
+    z-index: 100;
+}
+
+.logo {
+    width: 60%; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción del logo */
+    position: absolute;
+    right: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.boton {
+    width: 150px; /* Ajusta el tamaño del rectángulo */
+    height: 70px; /* Ajusta el tamaño del rectángulo */
+    background-color: #EA5425; /* Color del rectángulo */
+    border-radius: 50px; /* Ajusta el borde redondeado */
+    display: flex;
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    position: relative;
+    left: 10%;
+}
+
+.pdf {
+    color: white;
+    text-align: center;
+    font-family: 'Lilita One', sans-serif;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    transition: transform 0.3s ease;
+    
+}
+.pdf:hover{
+    /* color: #1D1D1B; */
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+/* Estilos responsivos */
+@media (max-width: 1200px) {
+    .boton {
+        width: 120px; /* Ajusta el tamaño del botón */
+        height: 40px; /* Ajusta el tamaño del botón */
+    }
+    
+    .pdf {
+        font-size: 14px; /* Ajusta el tamaño del texto */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+        height: 50%;
+    }
+
+    .circle {
+        width: 150px; /* Ajusta el tamaño del círculo */
+        height: 140px; /* Ajusta el tamaño del círculo */
+        left: calc(50% - 75px); /* Centra el círculo horizontalmente */
+        transform: translate(-50%, -50%);
+    }
+
+    .boton {
+        width: 100px; /* Ajusta el tamaño del botón */
+        height: 35px; /* Ajusta el tamaño del botón */
+    }
+
+    .pdf {
+        font-size: 12px; /* Ajusta el tamaño del texto */
+    }
+
+    .logo {
+        width: 150px; /* Ajusta el tamaño del logo */
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+}
