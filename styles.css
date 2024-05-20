@@ -163,7 +163,7 @@ a{
 }
 
 /* Ajustes para pantallas medianas */
-@media (max-width: 1406px) {
+@media (max-width: 1406px){
     .icon {
         top: -25%; /* Ajusta la posición del icono */
         width: 25%;
@@ -192,6 +192,48 @@ a{
         width: 70px; /* Ajusta el tamaño de los iconos de redes sociales */
         height: auto;
         margin-bottom: -150%;
+    }
+
+    .boton {
+        width: 140px; /* Ajusta el tamaño del botón */
+        height: 60px; /* Ajusta el tamaño del botón */
+    }
+
+    .pdf {
+        font-size: 14px; /* Ajusta el tamaño del texto */
+    }
+}
+
+@media (max-height: 750px){
+    .icon {
+        top: -15%; /* Ajusta la posición del icono */
+        width: 20%;
+        height: auto;
+    }
+    .circle{
+        width: 190px; /* Ajusta el tamaño del círculo */
+        height: 170px; 
+    }
+
+    .titulo {
+        font-size: 30px; /* Ajusta el tamaño del título */
+        margin-top: 10px; /* Ajusta el margen superior */
+    }
+
+    .p1,.p2 {
+        font-size: 26px;
+    }
+    .social-icons {
+        position: relative; /* Cambia a relative para mantener la posición dentro del contenedor */
+        margin-top: 20px; /* Añade un margen superior */
+        top: auto; /* Elimina la posición superior */
+    }
+
+    .social-icons img {
+        padding-bottom: 10px;
+        width: 55px; /* Ajusta el tamaño de los iconos de redes sociales */
+        height: auto;
+        margin-bottom: -10%;
     }
 
     .boton {
