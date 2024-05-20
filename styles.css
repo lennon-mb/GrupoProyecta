@@ -22,7 +22,7 @@ a{
 .left {
     background-color: #EA5425; /* Fondo naranja */
     width: 50%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center; /* Centra el contenido horizontalmente */
     align-items: center; /* Centra el contenido verticalmente */
@@ -94,7 +94,7 @@ a{
 .right {
     background-color: #FFFFFF; /* Color blanco */
     width: 50%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: flex-start; /* Alinea el contenido a la izquierda */
     align-items: center; /* Centra el contenido verticalmente */
@@ -162,35 +162,76 @@ a{
     }
 }
 
-@media (max-width: 768px) {
+/* Ajustes para pantallas medianas */
+@media (max-width: 1406px) {
+    .icon {
+        top: -25%; /* Ajusta la posición del icono */
+        width: 25%;
+        height: auto;
+    }
+    .circle{
+        width: 190px; /* Ajusta el tamaño del círculo */
+        height: 170px; 
+    }
+
+    .titulo {
+        font-size: 33px; /* Ajusta el tamaño del título */
+        margin-top: 10px; /* Ajusta el margen superior */
+    }
+
+    .p1,.p2 {
+        font-size: 28px;
+    }
+    .social-icons {
+        position: relative; /* Cambia a relative para mantener la posición dentro del contenedor */
+        margin-top: 20px; /* Añade un margen superior */
+        top: auto; /* Elimina la posición superior */
+    }
+
+    .social-icons img {
+        width: 70px; /* Ajusta el tamaño de los iconos de redes sociales */
+        height: auto;
+        margin-bottom: -150%;
+    }
+
+    .boton {
+        width: 140px; /* Ajusta el tamaño del botón */
+        height: 60px; /* Ajusta el tamaño del botón */
+    }
+
+    .pdf {
+        font-size: 14px; /* Ajusta el tamaño del texto */
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 992px) {
     .container {
         flex-direction: column;
+        height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
     }
 
     .left, .right {
         width: 100%;
-        height: 50%;
+        height: 50vh; /* Ajusta la altura de cada sección para evitar el scroll */
     }
 
     .icon {
-        width: 150px; /* Ajusta el tamaño del icono */
+        top: 5%; /* Ajusta la posición del icono */
+    }
+
+    .social-icons {
         position: relative; /* Cambia a relative para mantener la posición dentro del contenedor */
-        top: 10%; /* Ajusta la posición del icono */
-        left: 50%;
-        transform: translateX(-50%);
+        margin-top: 10px; /* Añade un margen superior */
+    }
+
+    .social-icons img {
+        width: 40px; /* Ajusta el tamaño de los iconos de redes sociales */
     }
 
     .titulo {
         font-size: 30px; /* Ajusta el tamaño del título */
         margin-top: 10px; /* Ajusta el margen superior */
-        text-align: center;
-    }
-
-    .circle {
-        width: 150px; /* Ajusta el tamaño del círculo */
-        height: 140px; /* Ajusta el tamaño del círculo */
-        left: calc(50% - 75px); /* Centra el círculo horizontalmente */
-        transform: translate(-50%, -50%);
     }
 
     .boton {
@@ -201,10 +242,35 @@ a{
     .pdf {
         font-size: 12px; /* Ajusta el tamaño del texto */
     }
+}
 
-    .logo {
-        width: 150px; /* Ajusta el tamaño del logo */
-        right: 50%;
-        transform: translate(50%, -50%);
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+    }
+
+    .left, .right {
+        width: 100%;
+        height: 50vh; /* Ajusta la altura de cada sección para evitar el scroll */
+    }
+
+    .icon {
+        top: 5%; /* Ajusta la posición del icono */
+    }
+
+    .social-icons {
+        position: relative; /* Cambia a relative para mantener la posición dentro del contenedor */
+        margin-top: 20px; /* Añade un margen superior */
+        top: 20px; /* Elimina la posición inferior */
+    }
+
+    .social-icons img {
+        width: 40px; /* Ajusta el tamaño de los iconos de redes sociales */
+    }
+
+    .titulo {
+        margin-top: 10px; /* Ajusta el margen superior */
     }
 }
